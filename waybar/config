@@ -1,0 +1,98 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom",
+    "height": 40, // Waybar height (to be removed for auto height)
+    "spacing": 4, // Gaps between modules (4px)
+    "modules-left": ["hyprland/workspaces","hyprland/window"],
+    "modules-center": ["group/hardware"],
+    "modules-right": ["pulseaudio", "tray", "clock"],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1"
+    },
+    "group/group-power": {
+    "orientation": "inherit",
+    "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-power",
+        "transition-left-to-right": false,
+    },
+    "modules": [
+        "custom/power", // First element is the "group leader" and won't ever be hidden
+        "custom/quit",
+        "custom/lock",
+        "custom/reboot"
+    ]
+},
+"custom/quit": {
+    "format": " 󰗼 ",
+    "tooltip": false,
+    "on-click": "hyprctl dispatch exit"
+},
+"custom/lock": {
+    "format": " 󰍁 ",
+    "tooltip": false,
+    "on-click": "swaylock"
+},
+"custom/reboot": {
+    "format": " 󰜉 ",
+    "tooltip": false,
+    "on-click": "reboot"
+},
+"custom/power": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "shutdown now"
+},
+    "tray": {
+        "spacing": 10
+    },
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+
+            "cpu",
+            "memory",
+            "temperature",
+        "group/group-power"
+        ]
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d-%m-%Y}"
+    },
+    "cpu": {
+        "interval": 2,
+        "format": "{usage}% ",
+        "tooltip": true
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
+        "critical-threshold": 70,
+        "interval": 2,
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+}
+

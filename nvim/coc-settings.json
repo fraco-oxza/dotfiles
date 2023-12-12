@@ -1,0 +1,48 @@
+{
+  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
+  "cSpellExt.enableDictionaries": ["spanish"],
+  "cSpell.language": "en,es",
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  },
+  "coc.preferences.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/usr/bin/black",
+  "snippets.ultisnips.pythonPrompt": false,
+  "cSpell.userWords": [
+    "Conv",
+    "Natrix",
+    "bprint",
+    "ccls",
+    "crossterm",
+    "cuda",
+    "dsep",
+    "dtype",
+    "hmac",
+    "inplace",
+    "objc",
+    "objcpp",
+    "optim",
+    "pygame",
+    "stoi",
+    "symm",
+    "ultisnips",
+    "unsqueeze",
+    "wineq"
+  ]
+}
