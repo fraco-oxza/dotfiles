@@ -5,7 +5,10 @@
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": ["hyprland/workspaces","hyprland/window"],
     "modules-center": ["group/hardware"],
-    "modules-right": ["pulseaudio", "tray", "clock"],
+    "modules-right": ["pulseaudio", "tray", 
+
+        "group/group-power",
+    "clock"],
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
@@ -55,7 +58,7 @@
             "cpu",
             "memory",
             "temperature",
-        "group/group-power"
+
         ]
     },
     "clock": {
