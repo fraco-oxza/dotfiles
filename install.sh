@@ -10,5 +10,5 @@ ln -s $(pwd)/fish/ ~/.config/fish
 mv ~/.config/kitty ~/.config/kitty-old
 ln -s $(pwd)/kitty/ ~/.config/kitty
 
-mv ~/.config/waybar ~/.config/waybar
+mv ~/.config/waybar ~/.config/waybar-old
 ln -s $(pwd)/waybar/ ~/.config/waybar
