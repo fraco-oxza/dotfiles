@@ -5,14 +5,21 @@
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": ["hyprland/workspaces","hyprland/window"],
     "modules-center": ["group/hardware"],
-    "modules-right": ["pulseaudio", "tray", 
-
+    "modules-right": ["custom/pacman","pulseaudio", "tray", 
         "group/group-power",
     "clock"],
+=======
+    "modules-right": ["custom/pacman","pulseaudio", "tray", 
+        "group/group-power",
+        "clock"],
+>>>>>>> main
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
-        "on-scroll-down": "hyprctl dispatch workspace e-1"
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "persistent-workspaces": {
+                "*": 6
+            }
     },
     "group/group-power": {
     "orientation": "inherit",
@@ -63,7 +70,8 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d-%m-%Y}"
+        "format-alt": "{:%d-%m-%Y %H:%m:%S}",
+        "interval": 1,
     },
     "cpu": {
         "interval": 2,
@@ -110,6 +118,14 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/pacman": {
+        "format": "{}  ",
+        "interval": 3600,                     // every hour
+        "exec": "checkupdates | wc -l",       // # of updates
+        "exec-if": "exit 0",                  // always run; consider advanced run conditions
+        "on-click": "kitty fish -c \"sudo pacman -Suy && pkill -SIGRTMIN+8 waybar\"", // update system
+        "signal": 8
     },
 }
 

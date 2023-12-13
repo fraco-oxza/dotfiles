@@ -1,6 +1,6 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: FontAwesome, Open Sans;
+  font-family: FontAwesome, JetBrains Mono;
   font-size: 14px;
   font-weight: 400;
 }
@@ -54,16 +54,16 @@ button:hover {
   color: #ebdbb2;
 }
 
+#workspaces button.empty {
+  color: #928374;
+}
+
 #workspaces button:hover {
   color: #c35e0a;
 }
 
 #workspaces button.active {
   color: #b47109;
-}
-
-#workspaces button.urgent {
-  background-color: #eb4d4b;
 }
 
 #mode {
