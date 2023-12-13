@@ -7,12 +7,7 @@
     "modules-center": ["group/hardware"],
     "modules-right": ["custom/pacman","pulseaudio", "tray", 
         "group/group-power",
-    "clock"],
-=======
-    "modules-right": ["custom/pacman","pulseaudio", "tray", 
-        "group/group-power",
         "clock"],
->>>>>>> main
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
