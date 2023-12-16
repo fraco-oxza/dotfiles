@@ -24,7 +24,7 @@
         "transition-left-to-right": false,
     },
     "modules": [
-        "custom/power", // First element is the "group leader" and won't ever be hidden
+        "custom/power", 
         "custom/quit",
         "custom/lock",
         "custom/reboot"
@@ -101,9 +101,9 @@
     },
     "custom/pacman": {
         "format": "{}  ",
-        "interval": 3600,                     // every hour
-        "exec": "checkupdates | wc -l",       // # of updates
-        "exec-if": "exit 0",                  // always run; consider advanced run conditions
+        "interval": 3600,                   
+        "exec": "checkupdates | wc -l",       
+        "exec-if": "[ $(checkupdates | wc -l) -gt 0 ]",
         "on-click": "kitty fish -c \"sudo pacman -Suy && pkill -SIGRTMIN+8 waybar\"", // update system
         "signal": 8
     },
