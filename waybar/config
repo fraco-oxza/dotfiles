@@ -1,8 +1,8 @@
 {
-    "layer": "top", // Waybar at top layer
+    "layer": "top", 
     "position": "bottom",
-    "height": 40, // Waybar height (to be removed for auto height)
-    "spacing": 4, // Gaps between modules (4px)
+    "height": 40,
+    "spacing": 4, 
     "modules-left": ["hyprland/workspaces","hyprland/window"],
     "modules-center": ["group/hardware"],
     "modules-right": ["custom/pacman","pulseaudio", "tray", 
@@ -70,11 +70,11 @@
     },
     "cpu": {
         "interval": 2,
-        "format": "{usage}% ",
+        "format": "{usage}%  ",
         "tooltip": true
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}%  "
     },
     "temperature": {
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -98,6 +98,7 @@
     },
     "pulseaudio": {
         "scroll-step": 0.5, // %, can be a float
+
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
         "format-bluetooth-muted": "  {icon} {format_source}",
@@ -107,6 +108,7 @@
             "hands-free": "󱡏 ",
             "headset": "󰋎 ",
             "phone": " ", 
+
             "portable": " ",
             "car": " ",
             "default": ["", "", " "]
