@@ -2,6 +2,9 @@ call plug#begin(stdpath('data').'/plugged')
 
     " Gruvbox Theme
     Plug 'sainnhe/gruvbox-material'
+    Plug 'frazrepo/vim-rainbow'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+
 
     " Translator
     Plug 'potamides/pantran.nvim'

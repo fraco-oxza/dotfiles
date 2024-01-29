@@ -43,6 +43,8 @@ let g:gruvbox_material_foreground='material'
 let g:gruvbox_material_enable_bold=1
 let g:gruvbox_material_enable_italic=1
 
+let g:rainbow_active = 1
+
 let g:loaded_perl_provider = 0
 
 colorscheme gruvbox-material

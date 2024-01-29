@@ -1,6 +1,7 @@
 set PATH $PATH /home/fraco/.cargo/bin
 set PATH $PATH /home/fraco/.local/share/gem/ruby/3.0.0/bin
 set PATH $PATH /home/fraco/.local/bin
+set PATH $PATH /opt/cuda/bin
 set -x EDITOR nvim
 
 
