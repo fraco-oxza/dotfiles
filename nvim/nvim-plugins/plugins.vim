@@ -3,6 +3,9 @@ call plug#begin(stdpath('data').'/plugged')
     " Gruvbox Theme
     Plug 'sainnhe/gruvbox-material'
 
+    " Translator
+    Plug 'potamides/pantran.nvim'
+
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'github/copilot.vim'
 
