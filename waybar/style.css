@@ -86,7 +86,8 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#mpd {
+#mpd,
+#wireplumber {
   padding: 0 10px;
   color: #ffffff;
 }
@@ -182,23 +183,9 @@ label:focus {
   color: #eb4d4b;
 }
 
-#pulseaudio {
-  background-color: transparent;
-  color: #ebdbb2;
-}
-
-#pulseaudio.muted {
-  background-color: #90b1b1;
-  color: #2a5c45;
-}
-
-#wireplumber {
-  background-color: #fff0f5;
-  color: #000000;
-}
-
 #wireplumber.muted {
-  background-color: #f53c3c;
+  color: #c35e0a;
+  text-decoration: underline;
 }
 
 #tray {
