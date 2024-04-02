@@ -4,6 +4,9 @@ call plug#begin(stdpath('data').'/plugged')
     Plug 'sainnhe/gruvbox-material'
     Plug 'frazrepo/vim-rainbow'
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+    Plug 'aklt/plantuml-syntax'
+    Plug 'weirongxu/plantuml-previewer.vim'
+    Plug 'tyru/open-browser.vim'
 
 
     " Translator
