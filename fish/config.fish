@@ -6,6 +6,10 @@ set -x GPG_TTY (tty)
 set -x EDITOR nvim
 set -x SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
 
+if test -z "$DISPLAY" ; and test "$XDG_VTNR" -eq 1
+    Hyprland
+end
+
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
