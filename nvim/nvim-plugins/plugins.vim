@@ -1,5 +1,4 @@
 call plug#begin(stdpath('data').'/plugged')
-
     " Gruvbox Theme
     Plug 'sainnhe/gruvbox-material'
     Plug 'frazrepo/vim-rainbow'
@@ -7,7 +6,6 @@ call plug#begin(stdpath('data').'/plugged')
     Plug 'aklt/plantuml-syntax'
     Plug 'weirongxu/plantuml-previewer.vim'
     Plug 'tyru/open-browser.vim'
-
 
     " Translator
     Plug 'potamides/pantran.nvim'
@@ -19,8 +17,6 @@ call plug#begin(stdpath('data').'/plugged')
     Plug 'airblade/vim-gitgutter'
 
     Plug 'lervag/vimtex'
-
-    Plug 'tpope/vim-rhubarb'
 
     " Airline status bar
     Plug 'vim-airline/vim-airline'

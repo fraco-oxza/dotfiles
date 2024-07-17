@@ -1,8 +1,25 @@
 {
   "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
   "cSpellExt.enableDictionaries": ["spanish"],
+  "sql.database": "postgresql",
   "cSpell.language": "en,es",
   "languageserver": {
+    "astro-ls": {
+        "command": "astro-ls",
+        "args": ["--stdio"],
+        "filetypes": ["astro"],
+        "rootPatterns": [
+            "package.json",
+            "tsconfig.json",
+            "jsconfig.json",
+            ".git"
+        ],
+        "initializationOptions": {
+            "typescript": {
+                "tsdk": "node_modules/typescript/lib"
+            }
+        }
+    },
     "ccls": {
       "command": "ccls",
       "filetypes": ["c", "cpp", "objc", "objcpp"],
@@ -26,20 +43,31 @@
   "snippets.ultisnips.pythonPrompt": false,
   "cSpell.userWords": [
     "Conv",
+    "Farías",
+    "ICPC",
     "Natrix",
     "SSSP",
+    "USACO",
+    "UTALCA",
+    "UTFSM",
+    "abcdefghijklmnñopqrstuvwxyz",
+    "ayudantías",
     "bprint",
     "ccls",
     "crossterm",
+    "cses",
     "cuda",
     "dsep",
     "dtype",
+    "grayscale",
     "hmac",
+    "imdb",
     "inplace",
     "objc",
     "objcpp",
     "optim",
     "pygame",
+    "reqwest",
     "stoi",
     "symm",
     "ultisnips",
