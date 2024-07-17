@@ -10,6 +10,7 @@ let g:config_file_list = ['/nvim-plugins/plugins.vim',
         \ '/keymapping/keys.vim',
         \ '/plug-config/pantran.lua',
         \ '/plug-config/copilot.vim',
+        \ '/plug-config/nerdtree.vim',
         \] 
 
 for f in g:config_file_list
