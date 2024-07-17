@@ -9,6 +9,7 @@ let g:config_file_list = ['/nvim-plugins/plugins.vim',
         \ '/plug-config/latex.vim',
         \ '/keymapping/keys.vim',
         \ '/plug-config/pantran.lua',
+        \ '/plug-config/copilot.vim',
         \] 
 
 for f in g:config_file_list

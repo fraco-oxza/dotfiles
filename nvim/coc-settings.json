@@ -1,24 +1,24 @@
 {
-  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
   "cSpellExt.enableDictionaries": ["spanish"],
   "sql.database": "postgresql",
+  "suggest.noselect": true,
   "cSpell.language": "en,es",
   "languageserver": {
     "astro-ls": {
-        "command": "astro-ls",
-        "args": ["--stdio"],
-        "filetypes": ["astro"],
-        "rootPatterns": [
-            "package.json",
-            "tsconfig.json",
-            "jsconfig.json",
-            ".git"
-        ],
-        "initializationOptions": {
-            "typescript": {
-                "tsdk": "node_modules/typescript/lib"
-            }
+      "command": "astro-ls",
+      "args": ["--stdio"],
+      "filetypes": ["astro"],
+      "rootPatterns": [
+        "package.json",
+        "tsconfig.json",
+        "jsconfig.json",
+        ".git"
+      ],
+      "initializationOptions": {
+        "typescript": {
+          "tsdk": "node_modules/typescript/lib"
         }
+      }
     },
     "ccls": {
       "command": "ccls",
