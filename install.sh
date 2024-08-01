@@ -12,3 +12,6 @@ ln -s $(pwd)/kitty/ ~/.config/kitty
 
 mv ~/.config/waybar ~/.config/waybar-old
 ln -s $(pwd)/waybar/ ~/.config/waybar
+
+mv ~/.config/tmux ~/.config/tmux-old
+ln -s $(pwd)/tmux/ ~/.config/tmux
