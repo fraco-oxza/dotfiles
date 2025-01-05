@@ -1,6 +1,6 @@
 return {
   "saghen/blink.cmp",
-  dependencies = "rafamadriz/friendly-snippets",
+  dependencies = { "rafamadriz/friendly-snippets", "echasnovski/mini.icons" },
 
   version = "0.8.2",
 
@@ -18,7 +18,29 @@ return {
       nerd_font_variant = "mono",
     },
 
-    signature = { enabled = true },
+    completion = {
+      menu = {
+        auto_show = function(ctx)
+          return ctx.mode ~= "cmdline"
+        end,
+        draw = {
+          components = {
+            kind_icon = {
+              ellipsis = false,
+              text = function(ctx)
+                local kind_icon, _, _ = require("mini.icons").get("lsp", ctx.kind)
+                return kind_icon
+              end,
+              -- Optionally, you may also use the highlights from mini.icons
+              highlight = function(ctx)
+                local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
+                return hl
+              end,
+            },
+          },
+        },
+      },
+    },
 
     sources = {
       default = { "lazydev", "lsp", "path", "snippets", "buffer" },

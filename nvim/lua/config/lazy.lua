@@ -31,6 +31,10 @@ opt.undofile = true
 opt.undolevels = 10000
 opt.termguicolors = true
 opt.encoding = "UTF-8"
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
 
 local wo = vim.wo
 wo.wrap = false
@@ -40,6 +44,9 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins" },
+    {
+      import = "config/keymaps",
+    },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.

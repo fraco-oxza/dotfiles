@@ -1,20 +1,22 @@
 return {
-{ 'echasnovski/mini.pairs', version = '*' 
-,
-  opts = {
-    modes = { insert = true, command = true, terminal = false },
-    -- skip autopair when next character is one of these
-    skip_next = [=[[%w%%%'%[%"%.%`%$]]=],
-    -- skip autopair when the cursor is inside these treesitter nodes
-    skip_ts = { "string" },
-    -- skip autopair when next character is closing pair
-    -- and there are more closing pairs than opening pairs
-    skip_unbalanced = true,
-    -- better deal with markdown code blocks
-    markdown = true,
+  {
+    "echasnovski/mini.pairs",
+    version = "*",
+    opts = {
+      modes = { insert = true, command = true, terminal = false },
+      skip_next = [=[[%w%%%'%[%"%.%`%$]]=],
+      skip_ts = { "string" },
+      skip_unbalanced = true,
+      markdown = true,
+    },
+    config = function(_, opts)
+      require("mini.pairs").setup()
+    end,
   },
-  config = function(_, opts)
-    require("mini.pairs").setup()
-  end,
-},
+  { "echasnovski/mini.ai", opts = {
+    search_method = "cover_or_nearest",
+  } },
+  { "echasnovski/mini.comment", opts = {} },
+  { "echasnovski/mini.surround", opts = {} },
+  { "echasnovski/mini.files", opts = {}, keys = { { "<leader>mf", "<cmd>lua MiniFiles.open()<cr>" } } },
 }
