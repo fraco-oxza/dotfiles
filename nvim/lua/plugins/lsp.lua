@@ -1,9 +1,8 @@
 return {
   {
     "williamboman/mason-lspconfig.nvim",
-    lazy = false,
     dependencies = {
-      "williamboman/mason.nvim",
+      { "williamboman/mason.nvim", lazy = false },
       "neovim/nvim-lspconfig",
     },
     opts = { automatic_installation = true },
