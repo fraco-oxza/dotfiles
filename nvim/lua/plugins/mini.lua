@@ -1,6 +1,7 @@
 return {
   {
     "echasnovski/mini.pairs",
+    event = "InsertEnter",
     version = "*",
     opts = {
       modes = { insert = true, command = true, terminal = false },
@@ -9,14 +10,14 @@ return {
       skip_unbalanced = true,
       markdown = true,
     },
-    config = function(_, opts)
+    config = function()
       require("mini.pairs").setup()
     end,
   },
-  { "echasnovski/mini.ai", opts = {
+  { "echasnovski/mini.ai", event = "InsertEnter", opts = {
     search_method = "cover_or_nearest",
   } },
-  { "echasnovski/mini.comment", opts = {} },
-  { "echasnovski/mini.surround", opts = {} },
+  { "echasnovski/mini.comment", event = "InsertEnter", opts = {} },
+  { "echasnovski/mini.surround", event = "InsertEnter", opts = {} },
   { "echasnovski/mini.files", opts = {}, keys = { { "<leader>mf", "<cmd>lua MiniFiles.open()<cr>" } } },
 }
