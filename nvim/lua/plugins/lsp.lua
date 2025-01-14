@@ -1,42 +1,38 @@
 return {
+  { "williamboman/mason.nvim", lazy = false, opts = {} },
+  {
+    "neovim/nvim-lspconfig",
+    dependencies = { "saghen/blink.cmp", "williamboman/mason-lspconfig.nvim" },
+
+    opts = {
+      servers = {
+        angularls = {},
+        astro = {},
+        lua_ls = {},
+        rust_analyzer = {},
+        gopls = {},
+        clangd = {},
+        cssls = {},
+        html = {},
+        ts_ls = {},
+        jdtls = {},
+        pyright = {},
+      },
+    },
+
+    config = function(_, opts)
+      local lspconfig = require("lspconfig")
+      for server, config in pairs(opts.servers) do
+        config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
+        lspconfig[server].setup(config)
+      end
+    end,
+  },
   {
     "williamboman/mason-lspconfig.nvim",
     dependencies = {
-      { "williamboman/mason.nvim", lazy = false },
-      "neovim/nvim-lspconfig",
+      "williamboman/mason.nvim",
     },
     opts = { automatic_installation = true },
-    config = function()
-      require("mason").setup()
-      require("mason-lspconfig").setup()
-
-      require("mason-lspconfig").setup_handlers({
-        function(server_name)
-          local capabilities = require("blink.cmp").get_lsp_capabilities()
-          require("lspconfig")[server_name].setup({ capabilites = capabilities })
-        end,
-
-        rust_analyzer = function()
-          local capabilities = require("blink.cmp").get_lsp_capabilities()
-          require("lspconfig").rust_analyzer.setup({
-            capabilites = capabilities,
-            on_attach = function(client, bufnr)
-              vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
-            end,
-            settings = {
-              ["rust-analyzer"] = {
-                checkOnSave = {
-                  command = "clippy",
-                },
-                runnables = {
-                  use_telescope = true,
-                },
-              },
-            },
-          })
-        end,
-      })
-    end,
-    -- stylua: ignore
   },
 }
