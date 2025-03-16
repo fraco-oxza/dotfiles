@@ -6,12 +6,16 @@ return {
 
     opts = {
       servers = {
-        angularls = {},
+        hyprls = {},
         astro = {},
+        eslint = {},
         lua_ls = {},
         rust_analyzer = {},
         gopls = {},
-        clangd = {},
+        buf_ls = {},
+        clangd = {
+          filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
+        },
         cssls = {},
         html = {},
         ts_ls = {},

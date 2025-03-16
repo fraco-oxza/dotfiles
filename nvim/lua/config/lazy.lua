@@ -26,7 +26,6 @@ vim.g.python3_host_prog = "/home/fraco/.local/share/virtualenvs/nvim-ptxOXuXd/bi
 local opt = vim.opt
 opt.number = true
 opt.cursorline = true
-opt.clipboard = "unnamedplus"
 opt.undofile = true
 opt.undolevels = 10000
 opt.termguicolors = true
@@ -35,12 +34,21 @@ opt.tabstop = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
+opt.termguicolors = true
 
 local wo = vim.wo
 wo.wrap = false
 
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  pattern = { "*.hl", "hypr*.conf" },
+  callback = function(event)
+    require("notify")("Hello")
+    vim.cmd("setlocal filetype=hyprlang")
+  end,
+})
+
 -- stylua: ignore
-local keymaps = function() 
+local keymaps = function()
   vim.keymap.set("n", "<leader>cl", "<cmd>LspInfo<cr>", { desc = "Lsp Info" })
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
   vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "References", nowait = true })
@@ -54,7 +62,7 @@ local keymaps = function()
   vim.keymap.set({ "n", "v" }, "<leader>cc", vim.lsp.codelens.run, { desc = "Run Codelens" })
   vim.keymap.set("n", "<leader>cC", vim.lsp.codelens.refresh, { desc = "Refresh & Display Codelens" })
   vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "Rename" })
-vim.keymap.set("n", "<leader>cR", function() Snacks.rename.rename_file() end, { desc = "Rename File" })
+  vim.keymap.set("n", "<leader>cR", function() Snacks.rename.rename_file() end, { desc = "Rename File" })
 end
 
 keymaps()

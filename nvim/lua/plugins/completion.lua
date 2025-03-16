@@ -2,7 +2,7 @@ return {
   "saghen/blink.cmp",
   dependencies = { "rafamadriz/friendly-snippets", "echasnovski/mini.icons" },
 
-  version = "0.8.2",
+  version = "0.*",
 
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
@@ -49,6 +49,8 @@ return {
         },
       },
     },
+
+    fuzzy = { implementation = "rust" },
   },
 
   opts_extend = { "sources.default" },

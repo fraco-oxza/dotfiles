@@ -16,7 +16,7 @@ return {
     input = { enabled = true },
     notifier = { enabled = true },
     scope = { enabled = true },
-    scroll = { enabled = false },
+    scroll = { enabled = true },
     statuscolumn = { enabled = false },
     words = { enabled = true },
     lazygit = {},

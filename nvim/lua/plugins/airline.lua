@@ -1,9 +1,20 @@
 return {
   "nvim-lualine/lualine.nvim",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
+  dependencies = { "nvim-tree/nvim-web-devicons", "folke/noice.nvim" },
   opts = {
     sections = {
-      lualine_x = { "copilot", "encoding", "fileformat", "filetype" },
+      lualine_x = {
+        {
+          require("noice").api.status.mode.get,
+          cond = require("noice").api.status.mode.has,
+          color = { fg = "#ff9e64" },
+        },
+        "copilot",
+        "encoding",
+        "fileformat",
+        "filetype",
+      },
     },
+    options = { theme = "gruvbox-material" },
   },
 }
