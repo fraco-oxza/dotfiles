@@ -23,6 +23,11 @@ vim.g.maplocalleader = "\\"
 
 vim.g.python3_host_prog = "/home/fraco/.local/share/virtualenvs/nvim-ptxOXuXd/bin/python"
 
+vim.keymap.set("n", "<leader>l", function()
+  local new_config = not vim.diagnostic.config().virtual_lines
+  vim.diagnostic.config({ virtual_lines = new_config })
+end, { desc = "Toggle diagnostic virtual_lines" })
+
 local opt = vim.opt
 opt.number = true
 opt.cursorline = true
