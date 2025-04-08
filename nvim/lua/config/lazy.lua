@@ -21,11 +21,16 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-vim.g.python3_host_prog = "/home/fraco/.local/share/virtualenvs/nvim-ptxOXuXd/bin/python"
+vim.g.python3_host_prog = "~/.config/nvim/.venv/bin/python"
+
+vim.diagnostic.config({
+  virtual_text = true,
+  virtual_lines = false
+})
 
 vim.keymap.set("n", "<leader>l", function()
   local new_config = not vim.diagnostic.config().virtual_lines
-  vim.diagnostic.config({ virtual_lines = new_config })
+  vim.diagnostic.config({ virtual_lines = new_config, virtual_text = not new_config })
 end, { desc = "Toggle diagnostic virtual_lines" })
 
 local opt = vim.opt
