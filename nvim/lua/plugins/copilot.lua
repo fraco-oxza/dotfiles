@@ -9,8 +9,9 @@ return {
       },
       filetypes = {
         markdown = true,
+        yaml = true,
+        sql = true,
       },
     },
   },
-  { "AndreM222/copilot-lualine" },
 }

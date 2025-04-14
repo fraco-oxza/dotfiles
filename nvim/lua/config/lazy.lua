@@ -28,6 +28,10 @@ vim.diagnostic.config({
   virtual_lines = false
 })
 
+vim.diagnostic.config({
+  virtual_text = true,
+})
+
 vim.keymap.set("n", "<leader>l", function()
   local new_config = not vim.diagnostic.config().virtual_lines
   vim.diagnostic.config({ virtual_lines = new_config, virtual_text = not new_config })

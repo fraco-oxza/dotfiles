@@ -9,7 +9,6 @@ return {
           cond = require("noice").api.status.mode.has,
           color = { fg = "#ff9e64" },
         },
-        "copilot",
         "encoding",
         "fileformat",
         "filetype",
