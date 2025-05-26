@@ -2,7 +2,7 @@ return {
   "saghen/blink.cmp",
   dependencies = { "rafamadriz/friendly-snippets", "echasnovski/mini.icons" },
 
-  version = "0.*",
+  version = "1.*",
 
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config

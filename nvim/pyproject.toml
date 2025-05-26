@@ -1,0 +1,12 @@
+[project]
+name = "nvim"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "autopep8>=2.3.2",
+    "black>=25.1.0",
+    "pynvim>=0.5.2",
+    "pyright>=1.1.401",
+]

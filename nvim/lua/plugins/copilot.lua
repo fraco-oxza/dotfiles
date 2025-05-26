@@ -5,7 +5,7 @@ return {
     cmd = "Copilot",
     opts = {
       suggestion = {
-        auto_trigger = true,
+        auto_trigger = false,
       },
       filetypes = {
         markdown = true,
