@@ -1,4 +1,3 @@
-#only for testing 
 mv ~/.config/nvim ~/.config/nvim-old
 ln -s $(pwd)/nvim/ ~/.config/nvim
 
