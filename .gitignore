@@ -2,3 +2,4 @@
 /fish/conf.d/fnm.fish
 /fish/conf.d/rustup.fish
 /fish/fish_variables
+/nvim/*.jar
