@@ -15,3 +15,6 @@ ln -s $(pwd)/waybar/ ~/.config/waybar
 
 mv ~/.config/tmux ~/.config/tmux-old
 ln -s $(pwd)/tmux/ ~/.config/tmux
+
+mv ~/.config/jj ~/.config/jj-old
+ln -s $(pwd)/jj/ ~/.config/jj
