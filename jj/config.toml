@@ -3,7 +3,6 @@
 [user]
 name = "Francisco C. Ossa"
 email = "fraco_oxza@outlook.com"
-key = "9240DDAE84B1400A"
 
 [ui]
 default-command = "log"
@@ -11,7 +10,6 @@ default-command = "log"
 [signing]
 behavior = "drop"
 backend = "gpg"
-key = "9240DDAE84B1400A"
 
 [git]
 sign-on-push = true
