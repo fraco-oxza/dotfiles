@@ -21,7 +21,9 @@ return {
         ts_ls = {},
         jdtls = {},
         pyright = {},
-        texlab = {}
+        texlab = {},
+        tinymist = {},
+        zls = {}
       },
     },
 
