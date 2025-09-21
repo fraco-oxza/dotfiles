@@ -1,12 +1,14 @@
 return {
-  { "williamboman/mason.nvim", lazy = false, opts = {} },
+  {
+    "mason-org/mason.nvim",
+    opts = {}
+  },
   {
     "neovim/nvim-lspconfig",
     dependencies = { "saghen/blink.cmp", "williamboman/mason-lspconfig.nvim" },
 
     opts = {
       servers = {
-        hyprls = {},
         astro = {},
         eslint = {},
         lua_ls = {},
@@ -36,10 +38,11 @@ return {
     end,
   },
   {
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason-lspconfig.nvim",
+    opts = { automatic_installation = true, },
     dependencies = {
-      "williamboman/mason.nvim",
+      { "mason-org/mason.nvim", opts = {} },
+      "neovim/nvim-lspconfig",
     },
-    opts = { automatic_installation = true },
   },
 }

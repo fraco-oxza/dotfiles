@@ -55,12 +55,6 @@ opt.termguicolors = true
 local wo = vim.wo
 wo.wrap = false
 
-vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-  pattern = { "*.hl", "hypr*.conf" },
-  callback = function(event)
-    vim.cmd("setlocal filetype=hyprlang")
-  end,
-})
 
 -- stylua: ignore
 local keymaps = function()
