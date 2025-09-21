@@ -1,7 +1,10 @@
 return {
   {
     "zbirenbaum/copilot.lua",
-    event = "BufRead",
+    dependencies = {
+      "copilotlsp-nvim/copilot-lsp"
+    },
+    event = "InsertEnter",
     cmd = "Copilot",
     opts = {
       suggestion = {
