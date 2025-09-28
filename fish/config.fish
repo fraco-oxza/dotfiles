@@ -10,18 +10,27 @@ if test -z "$DISPLAY" ; and test "$XDG_VTNR" -eq 1
     Hyprland
 end
 
-
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    set fish_greeting 
+    # Comandos a ejecutar en sesiones interactivas
+    set fish_greeting
 
-    zoxide init fish | source
-    starship init fish | source
+    # Comprobamos si estamos en la terminal Kiro
+    if string match -q "$TERM_PROGRAM" "kiro"
+        # 1. Si estamos en Kiro, le decimos que se identifique como "vscode"
+        #    para que su propio script de integración funcione.
+        set -gx TERM_PROGRAM "vscode"
 
-    alias cd="z"
+        # 2. Inmediatamente después, cargamos el script de integración.
+        #    Ahora la comprobación interna del script ("string match ... 'vscode'") tendrá éxito.
+        . (kiro --locate-shell-integration-path fish)
+    else
+        # Si NO estamos en Kiro, cargamos zoxide, starship y los alias como de costumbre.
+        zoxide init fish | source
+        starship init fish | source
+
+        alias cd="z"
+    end
 end
-
-
 
 # pnpm
 set -gx PNPM_HOME "/home/fraco/.local/share/pnpm"
