@@ -22,6 +22,7 @@ return {
     lazygit = {},
     quickfile = {},
     terminal = {},
+    bigfiles = { enabled = true }
   },
   keys = {
     {
