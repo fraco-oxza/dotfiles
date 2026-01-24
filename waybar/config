@@ -1,118 +1,133 @@
 {
-   "layer":"top",
-   "position":"bottom",
-   "height":40,
-   "spacing":4,
-   "modules-left":[
-      "hyprland/workspaces",
-      "hyprland/window"
-   ],
-   "modules-center":[
-      "group/hardware"
-   ],
-   "modules-right":[
-      "group/group-power",
-      "custom/pacman",
-      "wireplumber",
-      "tray",
-      "clock"
-   ],
-   "hyprland/workspaces":{
-      "format":"{icon}",
-      "on-scroll-up":"hyprctl dispatch workspace e+1",
-      "on-scroll-down":"hyprctl dispatch workspace e-1",
-      "persistent-workspaces":{
-         "*":6
-      }
-   },
-   "group/group-power":{
-      "orientation":"inherit",
-      "drawer":{
-         "transition-duration":500,
-         "children-class":"not-power",
-         "transition-left-to-right":false
-      },
-   },
-   "tray":{
-      "spacing":10
-   },
-   "group/hardware":{
-      "orientation":"horizontal",
-      "modules":[
-         "cpu",
-         "memory",
-         "temperature",
-         "battery"
-      ]
-   },
-   "clock":{
-      "tooltip-format":"<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-      "format-alt":"{:%d-%m-%Y %H:%M:%S}",
-      "interval":1
-   },
-   "cpu":{
-      "interval":2,
-      "format":"{usage}%  ",
-      "tooltip":true
-   },
-   "memory":{
-      "format":"{}%  "
-   },
-   "temperature":{
-      "hwmon-path":"/sys/class/hwmon/hwmon5/temp1_input",
-      "critical-threshold":70,
-      "interval":2,
-      "format":"{temperatureC}°C "
-   },
-   "battery":{
-      "states":{
-         "good":95,
-         "warning":30,
-         "critical":15
-      },
-      "format":"{capacity}% {icon}",
-      "format-charging":"{capacity}% {icon}⌁",
-      "format-plugged":"{capacity}%  ",
-      "format-alt":"{time} {icon}",
-      "format-icons":[
-         "󰁺",
-         "󰁻",
-         "󰁼",
-         "󰁽",
-         "󰁾",
-         "󰁿",
-         "󰂀",
-         "󰂁",
-         "󰂂",
-         "󰁹"
-      ],
-      "interval":10
-   },
-   "wireplumber":{
-      "scroll-step":0.5,
-      "format":"{volume}% {icon}",
-      "format-muted":"{volume}%  ",
-      "format-icons":{
-         "headphone":" ",
-         "hands-free":"󱡏 ",
-         "headset":"󰋎 ",
-         "phone":" ",
-         "portable":" ",
-         "car":" ",
-         "default":[
-            "",
-            "",
-            " "
-         ]
-      },
-      "on-click":"pavucontrol"
-   },
-   "custom/pacman":{
-      "format":"{}  ",
-      "interval":3600,
-      "exec":"checkupdates | wc -l",
-      "exec-if":"[ $(checkupdates | wc -l) -gt 0 ]",
-      "on-click":"kitty fish -c \"sudo pacman -Suy && pkill -SIGRTMIN+8 waybar\"",
-      "signal":8
-   }
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+  "spacing": 0,
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [],
+  "modules-right": [
+    "group/hardware",
+    "wireplumber",
+    "custom/pacman",
+    "clock",
+    "tray",
+    "custom/notification",
+    "custom/power"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "persistent-workspaces": {
+      "*": 6
+    }
+  },
+
+  "hyprland/window": {
+    "max-length": 60,
+    "separate-outputs": true
+  },
+
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "cpu",
+      "memory",
+      "temperature",
+      "battery"
+    ]
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": "󰻠 {usage}%",
+    "tooltip": true
+  },
+
+  "memory": {
+    "format": "󰍛 {}%"
+  },
+
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
+    "critical-threshold": 70,
+    "interval": 2,
+    "format": "󰔏 {temperatureC}°C"
+  },
+
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "interval": 10
+  },
+
+  "wireplumber": {
+    "scroll-step": 0.5,
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 {volume}%",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "custom/pacman": {
+    "format": "󰏗 {}",
+    "interval": 3600,
+    "exec": "checkupdates | wc -l",
+    "exec-if": "[ $(checkupdates | wc -l) -gt 0 ]",
+    "on-click": "kitty fish -c \"sudo pacman -Suy && pkill -SIGRTMIN+8 waybar\"",
+    "signal": 8
+  },
+
+  "clock": {
+    "format": "󰃰  {:%a %d %b  %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "tray": {
+    "spacing": 8
+  },
+
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂚",
+      "dnd-notification": "󱅫",
+      "dnd-none": "󰂛",
+      "inhibited-notification": "󱅫",
+      "inhibited-none": "󰂚",
+      "dnd-inhibited-notification": "󱅫",
+      "dnd-inhibited-none": "󰂛"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+  "custom/power": {
+    "format": "󰐥",
+    "tooltip": false,
+    "on-click": "~/.config/waybar/power-menu.sh"
+  }
 }

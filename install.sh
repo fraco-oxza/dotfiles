@@ -18,3 +18,9 @@ ln -s $(pwd)/tmux/ ~/.config/tmux
 
 mv ~/.config/jj ~/.config/jj-old
 ln -s $(pwd)/jj/ ~/.config/jj
+
+mv ~/.config/wofi ~/.config/wofi-old
+ln -s $(pwd)/wofi/ ~/.config/wofi
+
+mv ~/.config/swaync ~/.config/swaync-old
+ln -s $(pwd)/swaync/ ~/.config/swaync

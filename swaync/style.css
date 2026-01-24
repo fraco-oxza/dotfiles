@@ -1,0 +1,224 @@
+/* ── Gruvbox Dark theme for SwayNC ─────────────────────── */
+
+* {
+  font-family: "Overpass", "Symbols Nerd Font Mono";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* ── Force opacity ──────────────────────────────────────── */
+.noti-window,
+.noti-window > * {
+  opacity: 1;
+  background: #1d2021;
+}
+
+/* ── Notification window ────────────────────────────────── */
+.notification-row {
+  outline: none;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  background: #3c3836;
+}
+
+.notification {
+  border-radius: 10px;
+  margin: 6px 12px;
+  padding: 0;
+  background: #1d2021;
+  border: 2px solid #504945;
+}
+
+.notification.low {
+  border-color: #504945;
+}
+
+.notification.normal {
+  border-color: #83a598;
+}
+
+.notification.critical {
+  border-color: #fb4934;
+  background: #282828;
+}
+
+.notification-content {
+  padding: 12px 14px;
+}
+
+.notification-default-action,
+.notification-action {
+  padding: 4px 10px;
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  background: transparent;
+  color: #a89984;
+  border: none;
+  border-top: 1px solid #3c3836;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  background: #3c3836;
+  color: #ebdbb2;
+}
+
+/* ── Summary / Body / Icon ─────────────────────────────── */
+.summary {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ebdbb2;
+}
+
+.time {
+  font-size: 11px;
+  color: #928374;
+}
+
+.body {
+  font-size: 12px;
+  color: #a89984;
+}
+
+.image {
+  border-radius: 6px;
+}
+
+.app-icon {
+  -gtk-icon-size: 48px;
+}
+
+/* ── Urgency colors ─────────────────────────────────────── */
+.low .summary   { color: #a89984; }
+.low .body      { color: #928374; }
+.critical .summary { color: #fb4934; }
+.critical .body    { color: #cc241d; }
+
+/* ── Close button ───────────────────────────────────────── */
+.close-button {
+  background: transparent;
+  color: #665c54;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.close-button:hover {
+  background: #3c3836;
+  color: #fb4934;
+}
+
+/* ── Control center ─────────────────────────────────────── */
+.control-center {
+  background: #1d2021;
+  border-radius: 12px;
+  border: 2px solid #504945;
+  padding: 6px;
+  opacity: 1;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  color: #665c54;
+  font-size: 14px;
+}
+
+/* ── Widgets ────────────────────────────────────────────── */
+.widget-title {
+  background: #282828;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 4px;
+  color: #ebdbb2;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.widget-title > button {
+  background: #3c3836;
+  color: #a89984;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.widget-title > button:hover {
+  background: #504945;
+  color: #ebdbb2;
+}
+
+.widget-dnd {
+  background: #282828;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 4px;
+  color: #ebdbb2;
+}
+
+.widget-dnd > switch {
+  background: #3c3836;
+  border-radius: 12px;
+  border: none;
+}
+
+.widget-dnd > switch:checked {
+  background: #83a598;
+}
+
+.widget-dnd > switch slider {
+  background: #ebdbb2;
+  border-radius: 50%;
+  min-height: 18px;
+  min-width: 18px;
+}
+
+.widget-inhibitors {
+  background: #282828;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 4px;
+  color: #ebdbb2;
+}
+
+.widget-inhibitors > button {
+  background: #3c3836;
+  color: #a89984;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.widget-inhibitors > button:hover {
+  background: #504945;
+  color: #ebdbb2;
+}
+
+/* ── MPRIS widget ───────────────────────────────────────── */
+.widget-mpris {
+  background: #282828;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 4px;
+}
+
+.widget-mpris-player {
+  padding: 8px;
+}
+
+.widget-mpris-title {
+  color: #ebdbb2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.widget-mpris-subtitle {
+  color: #a89984;
+  font-size: 12px;
+}

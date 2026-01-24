@@ -2,6 +2,7 @@ set PATH $PATH /home/fraco/.cargo/bin
 set PATH $PATH /home/fraco/.local/share/gem/ruby/3.0.0/bin
 set PATH $PATH /home/fraco/.local/bin
 set PATH $PATH /opt/cuda/bin
+fish_add_path "/home/fraco/.cache/.bun/bin"
 set -x GPG_TTY (tty)
 set -x EDITOR nvim
 set -x SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket

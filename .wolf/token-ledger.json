@@ -1,0 +1,637 @@
+{
+  "version": 1,
+  "created_at": "2026-04-05T19:40:41.849Z",
+  "lifetime": {
+    "total_tokens_estimated": 35085,
+    "total_reads": 30,
+    "total_writes": 43,
+    "total_sessions": 8,
+    "anatomy_hits": 28,
+    "anatomy_misses": 0,
+    "repeated_reads_blocked": 4,
+    "estimated_savings_vs_bare_cli": 10932
+  },
+  "sessions": [
+    {
+      "id": "session-2026-04-05-1540",
+      "started": "2026-04-05T19:40:47.661Z",
+      "ended": "2026-04-05T19:42:18.157Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/style.css",
+          "tokens_estimated": 866,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/wofi/config",
+          "tokens_estimated": 81,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/wofi/style.css",
+          "tokens_estimated": 464,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 866,
+        "output_tokens_estimated": 545,
+        "reads_count": 1,
+        "writes_count": 2,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-05-1540",
+      "started": "2026-04-05T19:40:47.661Z",
+      "ended": "2026-04-05T19:43:10.473Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/style.css",
+          "tokens_estimated": 866,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/install.sh",
+          "tokens_estimated": 145,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/wofi/config",
+          "tokens_estimated": 81,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/wofi/style.css",
+          "tokens_estimated": 464,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/install.sh",
+          "tokens_estimated": 39,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 1011,
+        "output_tokens_estimated": 584,
+        "reads_count": 2,
+        "writes_count": 3,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-04-05-1544",
+      "started": "2026-04-05T19:44:35.169Z",
+      "ended": "2026-04-05T19:48:06.925Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/style.css",
+          "tokens_estimated": 866,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/config",
+          "tokens_estimated": 590,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 2511,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprlock.conf",
+          "tokens_estimated": 648,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/wofi/style.css",
+          "tokens_estimated": 464,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/install.sh",
+          "tokens_estimated": 155,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/wofi/config",
+          "tokens_estimated": 76,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/.claude/plans/enumerated-toasting-rabbit.md",
+          "tokens_estimated": 904,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 408,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/install.sh",
+          "tokens_estimated": 42,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 19,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 5310,
+        "output_tokens_estimated": 1373,
+        "reads_count": 7,
+        "writes_count": 4,
+        "repeated_reads_blocked": 2,
+        "anatomy_lookups": 6
+      }
+    },
+    {
+      "id": "session-2026-04-05-1544",
+      "started": "2026-04-05T19:44:35.169Z",
+      "ended": "2026-04-05T19:49:39.374Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/style.css",
+          "tokens_estimated": 866,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/config",
+          "tokens_estimated": 590,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 2511,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprlock.conf",
+          "tokens_estimated": 648,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/wofi/style.css",
+          "tokens_estimated": 464,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/install.sh",
+          "tokens_estimated": 155,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/wofi/config",
+          "tokens_estimated": 76,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/.claude/plans/enumerated-toasting-rabbit.md",
+          "tokens_estimated": 904,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 408,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/install.sh",
+          "tokens_estimated": 42,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 19,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 13,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 5310,
+        "output_tokens_estimated": 1386,
+        "reads_count": 7,
+        "writes_count": 5,
+        "repeated_reads_blocked": 2,
+        "anatomy_lookups": 6
+      }
+    },
+    {
+      "id": "session-2026-04-05-1551",
+      "started": "2026-04-05T19:51:01.826Z",
+      "ended": "2026-04-05T19:51:57.537Z",
+      "reads": [],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 14,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 0,
+        "output_tokens_estimated": 14,
+        "reads_count": 0,
+        "writes_count": 1,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 0
+      }
+    },
+    {
+      "id": "session-2026-04-05-1551",
+      "started": "2026-04-05T19:51:01.826Z",
+      "ended": "2026-04-05T19:53:10.775Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 2511,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 14,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 13,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 36,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 2511,
+        "output_tokens_estimated": 63,
+        "reads_count": 1,
+        "writes_count": 3,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-05-1551",
+      "started": "2026-04-05T19:51:01.826Z",
+      "ended": "2026-04-05T19:55:01.549Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 2511,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 14,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 13,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 16,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 2511,
+        "output_tokens_estimated": 79,
+        "reads_count": 1,
+        "writes_count": 4,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-05-1551",
+      "started": "2026-04-05T19:51:01.826Z",
+      "ended": "2026-04-05T19:56:08.250Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 2511,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 14,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 13,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 36,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 16,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 0,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 13,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 2511,
+        "output_tokens_estimated": 92,
+        "reads_count": 1,
+        "writes_count": 6,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-05-1557",
+      "started": "2026-04-05T19:57:43.970Z",
+      "ended": "2026-04-05T19:59:05.154Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprlock.conf",
+          "tokens_estimated": 648,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprlock.conf",
+          "tokens_estimated": 623,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 648,
+        "output_tokens_estimated": 623,
+        "reads_count": 1,
+        "writes_count": 1,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-05-1557",
+      "started": "2026-04-05T19:57:43.970Z",
+      "ended": "2026-04-05T20:00:49.908Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprlock.conf",
+          "tokens_estimated": 648,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprlock.conf",
+          "tokens_estimated": 623,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprlock.conf",
+          "tokens_estimated": 357,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 648,
+        "output_tokens_estimated": 980,
+        "reads_count": 1,
+        "writes_count": 2,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-05-1602",
+      "started": "2026-04-05T20:02:19.806Z",
+      "ended": "2026-04-05T20:05:22.636Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/style.css",
+          "tokens_estimated": 866,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/style.css",
+          "tokens_estimated": 51,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/style.css",
+          "tokens_estimated": 6,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 866,
+        "output_tokens_estimated": 57,
+        "reads_count": 1,
+        "writes_count": 2,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-05-1620",
+      "started": "2026-04-05T20:20:39.311Z",
+      "ended": "2026-04-05T20:24:32.655Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/dunst/dunstrc",
+          "tokens_estimated": 383,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 2511,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/config",
+          "tokens_estimated": 590,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/install.sh",
+          "tokens_estimated": 175,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/style.css",
+          "tokens_estimated": 874,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/swaync/config.json",
+          "tokens_estimated": 386,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/swaync/style.css",
+          "tokens_estimated": 1035,
+          "action": "create"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/hypr/hyprland.conf",
+          "tokens_estimated": 6,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/install.sh",
+          "tokens_estimated": 23,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/config",
+          "tokens_estimated": 18,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/config",
+          "tokens_estimated": 166,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/waybar/style.css",
+          "tokens_estimated": 121,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 4533,
+        "output_tokens_estimated": 1755,
+        "reads_count": 5,
+        "writes_count": 7,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 5
+      }
+    },
+    {
+      "id": "session-2026-04-05-1629",
+      "started": "2026-04-05T20:29:13.364Z",
+      "ended": "2026-04-05T20:31:17.653Z",
+      "reads": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/swaync/style.css",
+          "tokens_estimated": 450,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/swaync/config.json",
+          "tokens_estimated": 200,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/fraco/Workdir/dotfiles/swaync/style.css",
+          "tokens_estimated": 69,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/swaync/style.css",
+          "tokens_estimated": 54,
+          "action": "edit"
+        },
+        {
+          "file": "/home/fraco/Workdir/dotfiles/swaync/config.json",
+          "tokens_estimated": 36,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 650,
+        "output_tokens_estimated": 159,
+        "reads_count": 2,
+        "writes_count": 3,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 2
+      }
+    }
+  ],
+  "daemon_usage": [],
+  "waste_flags": [],
+  "optimization_report": {
+    "last_generated": null,
+    "patterns": []
+  }
+}

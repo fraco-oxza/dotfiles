@@ -1,0 +1,86 @@
+/* ── Gruvbox Dark — Wofi ────────────────────────────────── */
+
+* {
+  font-family: "Overpass", "Symbols Nerd Font Mono";
+  font-size: 14px;
+}
+
+/* ── Outer window ───────────────────────────────────────── */
+window {
+  background-color: #1d2021;
+  border: 2px solid #504945;
+  border-radius: 12px;
+}
+
+/* ── Inner box ──────────────────────────────────────────── */
+#inner-box {
+  background: transparent;
+  padding: 8px;
+}
+
+/* ── Outer box ──────────────────────────────────────────── */
+#outer-box {
+  background: transparent;
+  padding: 10px;
+}
+
+/* ── Search input ───────────────────────────────────────── */
+#input {
+  background: #282828;
+  color: #ebdbb2;
+  border: 1px solid #504945;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  outline: none;
+  caret-color: #fabd2f;
+}
+
+#input:focus {
+  border-color: #83a598;
+}
+
+/* ── Scrollable area ────────────────────────────────────── */
+#scroll {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Entry row ──────────────────────────────────────────── */
+#entry {
+  background: transparent;
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin: 2px 0;
+  transition: background 0.15s ease;
+}
+
+#entry:selected {
+  background: #3c3836;
+  outline: none;
+}
+
+#entry:hover {
+  background: #32302f;
+}
+
+/* ── App icon ───────────────────────────────────────────── */
+#img {
+  margin-right: 10px;
+}
+
+/* ── App name ───────────────────────────────────────────── */
+#text {
+  color: #ebdbb2;
+}
+
+#entry:selected #text {
+  color: #fabd2f;
+  font-weight: 600;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────── */
+scrollbar {
+  opacity: 0;
+}

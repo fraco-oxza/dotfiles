@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "bugs": [
+    {
+      "id": "bug-001",
+      "timestamp": "2026-04-05T19:51:55.217Z",
+      "error_message": "Wrong reference: top should be bottom",
+      "file": "dunst/dunstrc",
+      "root_cause": "Used \"top\" instead of \"bottom\"",
+      "fix": "Changed top → bottom",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "unknown"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-05T19:51:55.217Z"
+    },
+    {
+      "id": "bug-002",
+      "timestamp": "2026-04-05T19:54:57.903Z",
+      "error_message": "Wrong reference: animation should be animationstyle",
+      "file": "hypr/hyprland.conf",
+      "root_cause": "Used \"animation\" instead of \"animationstyle\"",
+      "fix": "Changed animation → animationstyle",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "conf"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-05T19:54:57.903Z"
+    },
+    {
+      "id": "bug-003",
+      "timestamp": "2026-04-05T20:05:11.069Z",
+      "error_message": "CSS fix: font-size",
+      "file": "waybar/style.css",
+      "root_cause": "font-size: 13px → 14px",
+      "fix": "Changed font-size: 13px → 14px",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-05T20:05:11.069Z"
+    },
+    {
+      "id": "bug-004",
+      "timestamp": "2026-04-05T20:05:15.219Z",
+      "error_message": "Wrong reference: 15px should be 16px",
+      "file": "waybar/style.css",
+      "root_cause": "Used \"15px\" instead of \"16px\"",
+      "fix": "Changed 15px → 16px",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-05T20:05:15.219Z"
+    },
+    {
+      "id": "bug-005",
+      "timestamp": "2026-04-05T20:23:43.053Z",
+      "error_message": "Wrong reference: dunst should be swaync",
+      "file": "hypr/hyprland.conf",
+      "root_cause": "Used \"dunst\" instead of \"swaync\"",
+      "fix": "Changed dunst → swaync",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "conf"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-05T20:23:43.053Z"
+    }
+  ]
+}
