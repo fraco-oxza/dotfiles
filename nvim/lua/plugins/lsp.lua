@@ -36,7 +36,7 @@ return {
         "astro",
         "gopls",
         "lua_ls",
-        "pyright",
+        "basedpyright",
         "jdtls",
         "hyprls",
         "cssls",
