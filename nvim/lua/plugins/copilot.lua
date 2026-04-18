@@ -10,6 +10,14 @@ return {
       suggestion = {
         auto_trigger = false,
       },
+      nes = {
+        enabled = false,
+        keymap = {
+          accept_and_goto = "<leader>p",
+          accept = false,
+          dismiss = "<Esc>"
+        }
+      },
       filetypes = {
         markdown = true,
         yaml = true,

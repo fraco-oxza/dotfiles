@@ -99,6 +99,16 @@ button:hover {
   padding: 0 6px;
 }
 
+#mining {
+  background-color: #1d2021;
+  padding: 5px 14px;
+  margin: 10px 0px 10px 8px;
+  border-radius: 10px;
+  color: #ebdbb2;
+  border: 2px solid #c35e0a;
+  font-size: 12px;
+}
+
 #cpu {
   padding: 0 8px;
   color: #83a598;
@@ -172,11 +182,11 @@ button:hover {
   padding: 0 8px;
 }
 
-#tray > .passive {
+#tray>.passive {
   -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
   -gtk-icon-effect: highlight;
   background-color: #fb4934;
   border-radius: 8px;
@@ -217,6 +227,48 @@ button:hover {
 
 /* ── Animations ─────────────────────────────────────────── */
 @keyframes blink {
-  from { color: #ebdbb2; }
-  to   { color: #fb4934; }
+  from {
+    color: #ebdbb2;
+  }
+
+  to {
+    color: #fb4934;
+  }
+}
+
+/* ── Módulo de minería XMR ──────────────────────────────────── */
+
+#custom-xmr {
+  padding: 0 4px;
+  color: #ebdbb2;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+#custom-xmr.mining-active {
+  color: #83a598;
+  text-shadow: 0 0 8px rgba(131, 165, 152, 0.3);
+  animation: mining-pulse 2.5s ease-in-out infinite;
+}
+
+#custom-xmr.mining-idle {
+  color: #928374;
+}
+
+#custom-xmr.mining-error {
+  color: #ea6962;
+}
+
+@keyframes mining-pulse {
+  0% {
+    text-shadow: 0 0 4px rgba(131, 165, 152, 0.15);
+  }
+
+  50% {
+    text-shadow: 0 0 10px rgba(131, 165, 152, 0.5);
+  }
+
+  100% {
+    text-shadow: 0 0 4px rgba(131, 165, 152, 0.15);
+  }
 }

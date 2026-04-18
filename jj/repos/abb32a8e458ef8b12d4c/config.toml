@@ -1,0 +1,11 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[revset-aliases]
+"trunk()" = "main@origin"
+
+[user]
+email = "fcarvajal@mdsg.cl"
+
+[signing]
+backend = "ssh"
+key = "/home/fraco/.ssh/id_ed25519"

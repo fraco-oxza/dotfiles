@@ -3,3 +3,4 @@
 /fish/conf.d/rustup.fish
 /fish/fish_variables
 /nvim/*.jar
+/hypr/hypridle-host.conf

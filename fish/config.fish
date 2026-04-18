@@ -38,5 +38,9 @@ end
 # pnpm end
 
 
+# strix
+fish_add_path /home/fraco/.strix/bin
+
+
 # Added by Antigravity CLI installer
 set -gx PATH "/home/fraco/.local/bin" $PATH
