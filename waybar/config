@@ -6,6 +6,7 @@
 
   "modules-left": [
     "hyprland/workspaces",
+    "custom/special",
     "hyprland/window"
   ],
   "modules-center": [],
@@ -31,6 +32,15 @@
   "hyprland/window": {
     "max-length": 60,
     "separate-outputs": true
+  },
+
+  "custom/special": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/special-ws.sh",
+    "return-type": "json",
+    "escape": true,
+    "tooltip": true,
+    "on-click": "hyprctl dispatch togglespecialworkspace"
   },
 
   "group/hardware": {

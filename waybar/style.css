@@ -27,34 +27,58 @@ button:hover {
   background: inherit;
 }
 
-/* ── Workspaces island ──────────────────────────────────── */
+/* ── Workspaces pills ───────────────────────────────────── */
 #workspaces {
   background: #3c3836;
-  border-radius: 12px;
+  border-radius: 20px;
   margin: 5px 4px 5px 8px;
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
 #workspaces button {
-  padding: 0 9px;
-  color: #665c54;
-  border-radius: 8px;
-  transition: all 0.2s ease;
+  padding: 1px 10px 0;
+  margin: 4px 2px;
+  color: #504945;
+  border-radius: 20px;
+  background: transparent;
+  font-family: "Overpass Mono";
+  font-size: 13px;
+  transition: all 0.15s ease;
 }
 
-#workspaces button.occupied {
+#workspaces button:not(.empty):not(.active) {
+  background: #3c3836;
   color: #fe8019;
-  box-shadow: inset 0 -3px 0 0 #fe8019;
 }
 
 #workspaces button.active {
-  color: #fabd2f;
-  background: #504945;
+  background: #fabd2f;
+  color: #1d2021;
+  font-weight: 600;
 }
 
 #workspaces button:hover {
-  color: #ebdbb2;
   background: #504945;
+  color: #ebdbb2;
+}
+
+/* ── Special workspace island ───────────────────────────── */
+#custom-special {
+  padding: 0;
+  margin: 0;
+  color: transparent;
+  transition: all 0.2s ease;
+}
+
+#custom-special.active {
+  background: #b16286;
+  color: #1d2021;
+  border-radius: 12px;
+  margin: 5px 4px;
+  padding: 0 12px;
+  font-weight: 600;
+  font-family: "Overpass Mono";
+  font-size: 13px;
 }
 
 /* ── Window title island ────────────────────────────────── */
