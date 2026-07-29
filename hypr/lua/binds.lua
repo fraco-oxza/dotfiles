@@ -70,6 +70,8 @@ hl.bind(mainMod .. " + SHIFT + TAB", hl.dsp.window.fullscreen({ mode = "fullscre
 
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("cliphist list | wofi --dmenu | cliphist decode | wl-copy"))
 
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("~/.config/hypr/scripts/apunta-tiempo.sh"))
+
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output"))
 hl.bind(shiftMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
